@@ -1,0 +1,140 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\fcb7c23c1f6a718b173e58a7a8aafbec\design-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\d15e10644d2f57ae29ca8dfe397e92e2\appcompat-v7-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a1e82b39f71cd8de5f6af487752ab5c8\constraint-layout-1.1.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\5cd2668b474e3f580a5ee16f69569f48\support-v4-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\9084886f82c5070504c9b6958268766c\support-fragment-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\0fbd390b5dd90410c0b7960872524ccb\animated-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a32fa7932af4e77c6b265100b6a80af9\recyclerview-v7-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\8e8311c596930de67316bbe5595d700c\support-core-ui-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\6aef65670709aa71e1a5cfd0b600f7fb\support-core-utils-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\4146111fa1c835944de195f271dfdc96\support-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\8ba4e741cefffb1413448bed3973e2ec\transition-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\c2c7042bc442928ac9dd8dffea2cb79a\support-media-compat-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\4bc395114f57931320ace6dae20d2b04\support-compat-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\9ba787d5446dbfae920c7493100d68e7\livedata-core-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\2dd9b72733e113f03bbaf8592912b274\viewmodel-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\6cb202c3f4dbd46c929426e429fac264\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\29dcdf3340a050f7a7c366af2abcd953\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:6:5-75
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:6:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:8:22-78
+application
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:10:5-27:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a1e82b39f71cd8de5f6af487752ab5c8\constraint-layout-1.1.2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a1e82b39f71cd8de5f6af487752ab5c8\constraint-layout-1.1.2\AndroidManifest.xml:9:5-20
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:17:9-52
+	android:supportsRtl
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:16:9-67
+activity#com.examples.backendless.upload
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:19:9-53
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:19:19-41
+activity#com.examples.backendless.MainActivity
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:20:9-26:20
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:20:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml:24:27-74
+uses-sdk
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\fcb7c23c1f6a718b173e58a7a8aafbec\design-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\fcb7c23c1f6a718b173e58a7a8aafbec\design-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\d15e10644d2f57ae29ca8dfe397e92e2\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\d15e10644d2f57ae29ca8dfe397e92e2\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a1e82b39f71cd8de5f6af487752ab5c8\constraint-layout-1.1.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a1e82b39f71cd8de5f6af487752ab5c8\constraint-layout-1.1.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\5cd2668b474e3f580a5ee16f69569f48\support-v4-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\5cd2668b474e3f580a5ee16f69569f48\support-v4-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\9084886f82c5070504c9b6958268766c\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\9084886f82c5070504c9b6958268766c\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\0fbd390b5dd90410c0b7960872524ccb\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\0fbd390b5dd90410c0b7960872524ccb\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a32fa7932af4e77c6b265100b6a80af9\recyclerview-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\a32fa7932af4e77c6b265100b6a80af9\recyclerview-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\8e8311c596930de67316bbe5595d700c\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\8e8311c596930de67316bbe5595d700c\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\6aef65670709aa71e1a5cfd0b600f7fb\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\6aef65670709aa71e1a5cfd0b600f7fb\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\4146111fa1c835944de195f271dfdc96\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\4146111fa1c835944de195f271dfdc96\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\8ba4e741cefffb1413448bed3973e2ec\transition-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\8ba4e741cefffb1413448bed3973e2ec\transition-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\c2c7042bc442928ac9dd8dffea2cb79a\support-media-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\c2c7042bc442928ac9dd8dffea2cb79a\support-media-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\4bc395114f57931320ace6dae20d2b04\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\4bc395114f57931320ace6dae20d2b04\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\9ba787d5446dbfae920c7493100d68e7\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\9ba787d5446dbfae920c7493100d68e7\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\2dd9b72733e113f03bbaf8592912b274\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\2dd9b72733e113f03bbaf8592912b274\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\6cb202c3f4dbd46c929426e429fac264\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\6cb202c3f4dbd46c929426e429fac264\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\29dcdf3340a050f7a7c366af2abcd953\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-2\files-2.1\29dcdf3340a050f7a7c366af2abcd953\runtime-1.1.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lolo\Desktop\Project QR\LoginWithQR\app\src\main\AndroidManifest.xml
