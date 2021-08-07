@@ -1,16 +1,13 @@
-com/examples/backendless/BuildConfig.java
- com.examples.backendless.BuildConfig
 com/examples/backendless/upload.java
  com.examples.backendless.upload
  com.examples.backendless.upload$1
+com/examples/backendless/BuildConfig.java
+ com.examples.backendless.BuildConfig
 com/examples/backendless/MainActivity.java
  com.examples.backendless.MainActivity
  com.examples.backendless.MainActivity$1
  com.examples.backendless.MainActivity$2
  com.examples.backendless.MainActivity$3
+ com.examples.backendless.MainActivity$3$1
  com.examples.backendless.MainActivity$4
- com.examples.backendless.MainActivity$4$1
  com.examples.backendless.MainActivity$5
- com.examples.backendless.MainActivity$5$1
- com.examples.backendless.MainActivity$6
- com.examples.backendless.MainActivity$7

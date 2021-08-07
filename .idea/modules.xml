@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LoginWithQR.iml" filepath="$PROJECT_DIR$/LoginWithQR.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LoginWithQR.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LoginWithQR.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuickFileTransfer.iml" filepath="$PROJECT_DIR$/.idea/modules/QuickFileTransfer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QuickFileTransfer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QuickFileTransfer.app.iml" />
     </modules>
   </component>
 </project>

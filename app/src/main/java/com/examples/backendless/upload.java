@@ -92,7 +92,12 @@ public class upload extends AppCompatActivity {
                 // Perform operations on the document using its URI.
             }
 
-            et_fileSelect.setText("Current URI is: " + uri);
+            if(uri != null){
+                et_fileSelect.setText("Current File is: " + queryName(uri));
+            }else{
+                et_fileSelect.setText("No File Selected");
+            }
+
             //Log.d("UPLOAD", "the URI returned is: " + uri);
             outUri = uri;
         }
@@ -110,31 +115,4 @@ public class upload extends AppCompatActivity {
         return name;
     }
 
-    private File createTempFile(String name) {
-        File file = null;
-        try {
-            //file = File.createTempFile(name, null, getContext().getCacheDir());
-            file = File.createTempFile(name, null, this.getCacheDir());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return file;
-    }
-    private File saveContentToFile(Uri uri, File file) {
-        try {
-            //InputStream stream = contentResolver.openInputStream(uri);
-            InputStream stream = getContentResolver().openInputStream(uri);
-            BufferedSource source = Okio.buffer(Okio.source(stream));
-            BufferedSink sink = Okio.buffer(Okio.sink(file));
-            sink.writeAll(source);
-            sink.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return null;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-        return file;
-    }
 }

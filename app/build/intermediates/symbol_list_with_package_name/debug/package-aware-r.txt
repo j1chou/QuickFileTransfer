@@ -826,12 +826,12 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
-id button_login
+id button_dc
 id button_loginWithQR
+id button_pick
 id button_return
 id button_select
 id button_upload
-id button_upload2
 id cancel_action
 id center
 id center_horizontal
@@ -858,8 +858,6 @@ id dimensions
 id direct
 id disableHome
 id editText_fileInfo
-id editText_name
-id editText_password
 id editText_userInfo
 id edit_query
 id end
@@ -968,8 +966,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView_name
-id textView_pass
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
