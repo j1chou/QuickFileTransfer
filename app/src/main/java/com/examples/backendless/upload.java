@@ -1,12 +1,15 @@
 package com.examples.backendless;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.DocumentsContract;
+import android.provider.OpenableColumns;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,8 +17,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.Okio;
+
 public class upload extends AppCompatActivity {
 
+    //private ContentResolver contentResolver;
     private Button button_return;
     private Button button_select;
     private EditText et_fileSelect;
@@ -34,6 +47,7 @@ public class upload extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent returnIntent = new Intent();
+                returnIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 //returnIntent.putExtra("result", outUri);\
                 returnIntent.setData(outUri);
                 setResult(Activity.RESULT_OK,returnIntent);
@@ -51,6 +65,7 @@ public class upload extends AppCompatActivity {
         //Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         intent.setType("*/*");
         //intent.setType("application/pdf");
         // Optionally, specify a URI for the file that should appear in the
@@ -83,4 +98,43 @@ public class upload extends AppCompatActivity {
         }
     }
 
+    // private String queryName(ContentResolver resolver, Uri uri) {
+    private String queryName(Uri uri) {
+        //Cursor returnCursor = resolver.query(uri, null, null, null, null);
+        Cursor returnCursor = getContentResolver().query(uri, null, null, null, null);
+        assert returnCursor != null;
+        int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+        returnCursor.moveToFirst();
+        String name = returnCursor.getString(nameIndex);
+        returnCursor.close();
+        return name;
+    }
+
+    private File createTempFile(String name) {
+        File file = null;
+        try {
+            //file = File.createTempFile(name, null, getContext().getCacheDir());
+            file = File.createTempFile(name, null, this.getCacheDir());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
+    }
+    private File saveContentToFile(Uri uri, File file) {
+        try {
+            //InputStream stream = contentResolver.openInputStream(uri);
+            InputStream stream = getContentResolver().openInputStream(uri);
+            BufferedSource source = Okio.buffer(Okio.source(stream));
+            BufferedSink sink = Okio.buffer(Okio.sink(file));
+            sink.writeAll(source);
+            sink.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return file;
+    }
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Lolo\\Desktop\\Project QR\\LoginWithQR\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Lolo\\Desktop\\Project QR\\GitHub Repo\\LoginWithQR\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Lolo\\.gradle\\caches\\transforms-2\\files-2.1\\a1e82b39f71cd8de5f6af487752ab5c8\\constraint-layout-1.1.2\\res\\values\\values.xml",
@@ -40,20 +40,39 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lolo\\Desktop\\Project QR\\LoginWithQR\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\Lolo\\Desktop\\Project QR\\GitHub Repo\\LoginWithQR\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "48",
-                        "endOffsets": "60"
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
                     },
                     "to": {
-                        "startLines": "434",
+                        "startLines": "153,154,155",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "7792,7838,7885",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "7833,7880,7931"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Lolo\\Desktop\\Project QR\\GitHub Repo\\LoginWithQR\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "26083",
-                        "endColumns": "48",
-                        "endOffsets": "26127"
+                        "startOffsets": "54",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "368"
+                    },
+                    "to": {
+                        "startLines": "454",
+                        "startColumns": "4",
+                        "startOffsets": "28153",
+                        "endLines": "459",
+                        "endColumns": "12",
+                        "endOffsets": "28467"
                     }
                 },
                 {
@@ -71,23 +90,6 @@
                         "startOffsets": "9987,116075,116251,116373,116635,116830",
                         "endColumns": "88,65,121,60,65,66",
                         "endOffsets": "10071,116136,116368,116429,116696,116892"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Lolo\\Desktop\\Project QR\\LoginWithQR\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "153,154,155",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "7792,7838,7885",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "7833,7880,7931"
                     }
                 },
                 {
@@ -165,22 +167,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lolo\\Desktop\\Project QR\\LoginWithQR\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Lolo\\Desktop\\Project QR\\GitHub Repo\\LoginWithQR\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "3",
+                        "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "368"
+                        "startOffsets": "16",
+                        "endColumns": "48",
+                        "endOffsets": "60"
                     },
                     "to": {
-                        "startLines": "454",
+                        "startLines": "434",
                         "startColumns": "4",
-                        "startOffsets": "28153",
-                        "endLines": "459",
-                        "endColumns": "12",
-                        "endOffsets": "28467"
+                        "startOffsets": "26083",
+                        "endColumns": "48",
+                        "endOffsets": "26127"
                     }
                 },
                 {

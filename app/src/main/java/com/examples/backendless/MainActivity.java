@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.provider.OpenableColumns;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -34,7 +35,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Map;
+
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.Okio;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -158,6 +164,14 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     //upload files goes to the second activity,
                     uploadFiles();
+                    /*
+                    try {
+                        pushText();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                     */
                 }
             });
         } else {
@@ -242,6 +256,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void uploadFiles() {
         Intent i = new Intent(this, upload.class);
+        i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startActivityForResult(i, select_files);
     }
 
@@ -258,14 +273,31 @@ public class MainActivity extends AppCompatActivity {
         rn I'm trying to use a getPath function from StackOverflow to pull the file path
          */
 
-        String path = getPath(this, fileUri);
-        Log.i(TAG, "Pushing to backend, current fileUri is: " + path);
+        //String path = getPath(this, fileUri);
+        Log.i(TAG, "Pushing to backend, current fileUri is: " + fileUri);
         if(fileUri != null) {
-            File file = new File(path);
+            //File file = new File(path);
+            String fileName = queryName(fileUri);
+            File tempFile = createTempFile(fileName);
+            File file = saveContentToFile(fileUri, tempFile);
+
             Backendless.Files.upload(file, "/user_files", new AsyncCallback<BackendlessFile>() {
                 @Override
                 public void handleResponse(BackendlessFile uploadedFile) {
-                    Log.i(TAG, "File has been uploaded. File URL is - " + uploadedFile.getFileURL());
+                    uploadLink = uploadedFile.getFileURL();
+
+                    Log.i(TAG, "File has been uploaded. File URL is - " + uploadLink);
+                    Backendless.Messaging.publish(channelName, uploadLink, new AsyncCallback<MessageStatus>() {
+                        @Override
+                        public void handleResponse(MessageStatus response) {
+                            Log.i(MainActivity.class.getSimpleName(), "Uploaded link sent, link is: " + uploadLink);
+                        }
+
+                        @Override
+                        public void handleFault(BackendlessFault fault) {
+
+                        }
+                    });
                     file.delete();
                 }
 
@@ -293,6 +325,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleResponse(BackendlessFile uploadedFile) {
                 uploadLink = uploadedFile.getFileURL();
+
                 Log.i(TAG, "File has been uploaded. File URL is - " + uploadedFile.getFileURL());
                 Backendless.Messaging.publish(channelName, uploadLink, new AsyncCallback<MessageStatus>() {
                     @Override
@@ -442,5 +475,54 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return null;
+    }
+
+
+    // private String queryName(ContentResolver resolver, Uri uri) {
+    private String queryName(Uri uri) {
+        //Cursor returnCursor = resolver.query(uri, null, null, null, null);
+        Cursor returnCursor = getContentResolver().query(uri, null, null, null, null);
+        assert returnCursor != null;
+        int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+        returnCursor.moveToFirst();
+        String name = returnCursor.getString(nameIndex);
+        returnCursor.close();
+        Log.i(TAG, "The file name is: " + name);
+        return name;
+    }
+
+
+    private File createTempFile(String name) {
+        File file = null;
+        //using this to avoid tmp renaming
+        file = new File(this.getCacheDir(), name);
+        /*
+        try {
+            //file = File.createTempFile(name, null, getContext().getCacheDir());
+            //temp create temp files adds a .tmp, use create new file or something like that
+            file = File.createTempFile(name, null, this.getCacheDir());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+         */
+        return file;
+    }
+    private File saveContentToFile(Uri uri, File file) {
+        try {
+            //InputStream stream = contentResolver.openInputStream(uri);
+            InputStream stream = getContentResolver().openInputStream(uri);
+            BufferedSource source = Okio.buffer(Okio.source(stream));
+            BufferedSink sink = Okio.buffer(Okio.sink(file));
+            sink.writeAll(source);
+            sink.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return file;
     }
 }
